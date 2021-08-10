@@ -32,7 +32,7 @@ public class DB {
 	public static void closeConnection() {
 		if (conn != null) {
 			try {
-			conn.close();
+				conn.close();
 			} 
 			catch (SQLException e) {
 				throw new DbException(e.getMessage());
