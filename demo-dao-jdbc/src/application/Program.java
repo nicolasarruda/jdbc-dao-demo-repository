@@ -12,9 +12,8 @@ public class Program {
 		// It is a form of dependency injection without set out the implementation
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
+		System.out.println("=== Test 1: seller findById ===");
 		Seller seller = sellerDao.findById(3);
-		
-		
 		System.out.println(seller);
 	}
 
