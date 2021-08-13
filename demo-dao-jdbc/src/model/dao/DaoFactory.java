@@ -13,7 +13,7 @@ public class DaoFactory  {
 	}
 	
 	public static DepartmentDao createDeparmentDao() { // Interface declare
-		return new DepartmentDaoJDBC(); // implementation instance
+		return new DepartmentDaoJDBC(DB.getConnection()); // implementation instance
 	}
 	
 	

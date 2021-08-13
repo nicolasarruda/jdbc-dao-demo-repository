@@ -50,7 +50,7 @@ public class Program {
 		System.out.println("\n=== Test 6: seller delete ===");
 		int id = 7;
 		sellerDao.deleteById(id);
-		System.out.println("Deleted! Seller id = " + id);
+		System.out.println("Delete completed!");
 		
 		
 				
